@@ -1,3 +1,8 @@
-def count_substring(string, sub_string):
-    return sum(1 for i in range(len(string) - len(sub_string) + 1) if string[i:i+len(sub_string)] == sub_string)
-
+if __name__ == '__main__':
+    
+    s = input()
+    print(any(c.isalnum() for c in s))
+    print(any(c.isalpha() for c in s))
+    print(any(c.isdigit() for c in s))
+    print(any(c.islower() for c in s))
+    print(any(c.isupper() for c in s))
